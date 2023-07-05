@@ -14,9 +14,10 @@ jobs:
         
       - name: Build
         run: |
+          git checkout main
           mkdir -p build
-          cp -f /aula-6/index.html /build
-          cp -f -R /aula-4 /build
+          cp -f ./aula-6/index.html ./build
+          cp -f -R ./aula-4 ./build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
