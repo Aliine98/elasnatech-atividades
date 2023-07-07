@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d5e0ff;
+    font-family: 'Space mono', monospaced;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 25px;
+}
+
+h2 + div {
+    margin-left: 20px;
+}
+
+h3 {
+    margin-top: 2px;
+}
+
+h3 span {
+    color: #0012b4;
+}
