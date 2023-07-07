@@ -16,7 +16,7 @@ jobs:
         run: |
           git checkout main
           mkdir -p build
-          cp -f ./aula-6/* ./build
+          cp -f -R ./aula-6/* ./build
           cp -f -R ./aula-4 ./build
 
       - name: Deploy 🚀
