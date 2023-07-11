@@ -88,3 +88,20 @@ p strong {
     justify-content: center;
     gap: .5em;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bege);
+    padding-bottom: 1em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    color: #292424;
+    font-size: 1.8em;
+}
