@@ -18,6 +18,8 @@ jobs:
           mkdir -p build
           cp -f -R ./aula-6/* ./build
           cp -f -R ./aula-4 ./build
+          cp -f -R ./aula-7-cardapio ./build
+          cp -f -R ./portfolio ./build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
