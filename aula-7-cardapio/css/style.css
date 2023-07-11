@@ -46,9 +46,9 @@ section h2 {
 
 section div {
     display: grid;
-    grid-template-rows: 180px 50px 190px 50px;
+    grid-template-rows: 200px 50px 190px 50px;
     background-color: var(--bege);
-    width: 200px;
+    width: 250px;
     text-align: center;
     border-radius: 10px;
 }
@@ -65,6 +65,7 @@ div p {
 p strong {
     display: flex;
     justify-content: flex-end;
+    font-size: 1.1em;
 }
 
 .contact {
@@ -94,7 +95,7 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: var(--bege);
-    padding-bottom: 1em;
+    padding: 0 1em 1em;
 }
 
 footer a {
