@@ -8,8 +8,8 @@
 }
 
 body {
-    margin: 0 auto;
-    max-width: 1000px;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
 }
 
 main > div {
@@ -18,8 +18,15 @@ main > div {
     padding: 5em 0;
 }
 
-h1 + p {
+h1 {
+    font-family: "Caveat", cursive;
+    font-size: 3.5em;
+}
+
+.slogan {
     font-size: 1.5em;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
 }
 
 main section {
