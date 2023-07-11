@@ -1,0 +1,60 @@
+:root {
+    --bege: #d8d0a8;
+    --branco: #fdfdfd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+main > div {
+    background-color: var(--bege);
+    text-align: center;
+    padding: 5em 0;
+}
+
+h1 {
+    font-family: "Caveat", cursive;
+    font-size: 3.5em;
+}
+
+.slogan {
+    font-size: 1.5em;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+}
+
+main section {
+    background-color: var(--branco);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
+    padding-bottom: 4em;
+}
+
+section h2 {
+    text-align: center;
+    width: 100%;
+}
+
+section div {
+    background-color: var(--bege);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+div img {
+    border-radius: 10px 10px 0 0;
+}
+
+div p {
+    text-align: justify;
+    padding: 0 1em;
+}
