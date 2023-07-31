@@ -9,7 +9,10 @@
             content="ODS 3 - Saúde e Bem-estar: Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.">
         <meta name="keywords" content="ODS, ONU, Saúde, Bem-estar, desenvolvimento, sustentável">
         <meta name="author" content="Aline Bevilacqua">
-        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicon-16x16.png">
+        <link rel="manifest" href="./src/assets/site.webmanifest">
         <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
         <link rel="stylesheet" href="./src/css/style.css">
         <title>ODS 3 - Saúde e Bem-estar</title>
@@ -18,61 +21,126 @@
     <body>
         <header id="header">
             <div class="header-menu">
-                <img src="#" alt="" class="header-menu__logo">
-                <nav class="header-menu__nav">
+                <img src="./src/assets/logo.png" alt="Logo representando a ODS 3" class="header-menu__logo" />
+                <nav>
                     <ul class="header-menu__nav-list">
-                        <li class="header-menu__nav-item">
+                        <li>
                             <a href="#header" class="nav-item__link">Home</a>
                         </li>
-                        <li class="header-menu__nav-item">
+                        <li>
                             <a href="#about" class="nav-item__link">Sobre</a>
                         </li>
-                        <li class="header-menu__nav-item">
+                        <li>
                             <a href="#goals" class="nav-item__link">Metas</a>
                         </li>
-                        <li class="header-menu__nav-item">
+                        <li>
                             <a href="#" class="nav-item__link">Home</a>
                         </li>
-                        <li class="header-menu__nav-item">
+                        <li>
                             <a href="#" class="nav-item__link">Home</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <h1 class="header__title">ODS 3 - Saúde e Bem-estar</h1>
+            <div class="header__home">
+                <h1 class="home__title">Saúde e Bem-estar</h1>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="home__button">Saiba mais sobre
+                    ODS</a>
+            </div>
+            <div class="custom-shape-divider-bottom-1690774639">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
         </header>
         <main>
             <section id="about">
-                <!-- <iframe></iframe> -->
+                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/LMOynUxsGHo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 <div class="container">
                     <h2 class="about__title">Sobre</h2>
-                    <p class="about__description"></p>
+                    <div class="about__description">
+                        <p>
+                            Os Objetivos de Desenvolvimento Sustentável são um
+                            apelo global à ação para acabar com a pobreza,
+                            proteger o meio ambiente e o clima e garantir que as
+                            pessoas, em todos os lugares, possam desfrutar de
+                            paz e de prosperidade.
+                        </p>
+                        <p>
+                            A
+                            <abbr title="Objetivo de Desenvolvimento Sustentável">ODS</abbr> 3 visa garantir o acesso à
+                            saúde de qualidade e promover o bem-estar para todos, em todas as idades.
+                        </p>
+                    </div>
                 </div>
             </section>
             <section id="goals">
+                <h2 class="goals__title">Metas</h2>
                 <ul class="goals__list goals__list--part1">
-                    <li class="list__item"></li>
-                    <li class="list__item"></li>
-                    <li class="list__item"></li>
+                    <li class="list__item">Até 2030, reduzir a taxa de mortalidade materna global para menos de 70
+                        mortes por 100.000 nascidos vivos</li>
+                    <li class="list__item">Até 2030, acabar com as mortes evitáveis de recém-nascidos e crianças menores
+                        de 5 anos, com todos os países objetivando
+                        reduzir a mortalidade neonatal para pelo menos 12 por 1.000 nascidos vivos e a mortalidade de
+                        crianças menores de 5 anos
+                        para pelo menos 25 por 1.000 nascidos vivos</li>
+                    <li class="list__item">Até 2030, acabar com as epidemias de AIDS, tuberculose, malária e doenças
+                        tropicais negligenciadas, e combater a
+                        hepatite, doenças transmitidas pela água, e outras doenças transmissíveis</li>
                 </ul>
                 <picture>
-                    <img src="#" alt="" class="goals__img">
+                    <img src="#" alt="" class="goals__img" />
                 </picture>
                 <picture>
-                    <img src="#" alt="" class="goals__img">
+                    <img src="#" alt="" class="goals__img" />
                 </picture>
                 <ul class="goals__list goals__list--part2">
-                    <li class="list__item"></li>
-                    <li class="list__item"></li>
-                    <li class="list__item"></li>
+                    <li class="list__item">Até 2030, reduzir em um terço a mortalidade prematura por doenças não
+                        transmissíveis via prevenção e tratamento, e
+                        promover a saúde mental e o bem-estar</li>
+                    <li class="list__item">Até 2030, assegurar o acesso universal aos serviços de saúde sexual e
+                        reprodutiva, incluindo o planejamento familiar,
+                        informação e educação, bem como a integração da saúde reprodutiva em estratégias e programas
+                        nacionais</li>
+                    <li class="list__item">Atingir a cobertura universal de saúde, incluindo a proteção do risco
+                        financeiro, o acesso a serviços de saúde
+                        essenciais de qualidade e o acesso a medicamentos e vacinas essenciais seguros, eficazes, de
+                        qualidade e a preços
+                        acessíveis para todos</li>
                 </ul>
                 <ul class="goals__list goals__list--part3">
-                    <li class="list__item"></li>
-                    <li class="list__item"></li>
-                    <li class="list__item"></li>
+                    <li class="list__item">Até 2030, reduzir substancialmente o número de mortes e doenças por produtos
+                        químicos perigosos, contaminação e poluição
+                        do ar e água do solo</li>
+                    <li class="list__item">Apoiar a pesquisa e o desenvolvimento de vacinas e medicamentos para as
+                        doenças transmissíveis e não transmissíveis, que
+                        afetam principalmente os países em desenvolvimento, proporcionar o acesso a medicamentos e
+                        vacinas essenciais a preços
+                        acessíveis, de acordo com a Declaração de Doha, que afirma o direito dos países em
+                        desenvolvimento de utilizarem
+                        plenamente as disposições do acordo TRIPS sobre flexibilidades para proteger a saúde pública e,
+                        em particular,
+                        proporcionar o acesso a medicamentos para todos</li>
+                    <li class="list__item">Aumentar substancialmente o financiamento da saúde e o recrutamento,
+                        desenvolvimento e formação, e retenção do pessoal
+                        de saúde nos países em desenvolvimento, especialmente nos países menos desenvolvidos e nos
+                        pequenos Estados insulares em
+                        desenvolvimento</li>
                 </ul>
                 <picture>
-                    <img src="#" alt="" class="goals__img">
+                    <img src="#" alt="" class="goals__img" />
                 </picture>
             </section>
             <section></section>
@@ -82,11 +150,19 @@
         <footer>
             <div class="footer__credits">
                 <p>Créditos</p>
-                <ul>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                <ul class="credits__list">
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Canal do IBGE</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Site do IPEA</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
                 </ul>
             </div>
             <div class="footer__info">
