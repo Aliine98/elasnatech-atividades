@@ -130,19 +130,34 @@ body {
 }
 
 .about-container,
-#goals {
+#goals,
+footer,
+.credits__list {
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    padding: 10rem;
+}
+
+.about-container,
+#goals,
+.contributing-container,
+footer {
     max-width: 1600px;
+    padding: 10rem;
     margin: auto;
 }
 
 .about__title,
-.goals__title {
+.goals__title,
+.contributing__title {
     font-size: 2.8rem;
+}
+
+.about__description,
+.contributing__info {
+    font-size: 1.7rem;
+    text-align: left;
 }
 
 #goals {
@@ -178,4 +193,87 @@ body {
 
 .goals__img:nth-child(even) {
     justify-self: start;
+}
+
+#contributing {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.contributing__exemples {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.contributing__title {
+    margin: 0 0 4rem;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 12rem;
+    border-radius: 25px;
+    color: var(--primary-color);
+    width: 15rem;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+.card__title {
+    margin-top: 11rem;
+}
+
+.card-aware {
+    background-image: url(../assets/awareness.png);
+}
+
+.card-vaccine {
+    background-image: url(../assets/vaccine.png);
+}
+
+.card-volunteer {
+    background-image: url(../assets/volunteer.png);
+}
+
+.card-donation {
+    background-image: url(../assets/medical-assistance.png);
+}
+
+.card-mental-health {
+    background-image: url(../assets/mental-health.png);
+}
+
+.contributing__info a {
+    color: var(--secondary-color);
+}
+
+.contributing__info a {
+    color: #f4f81b;
+}
+
+.contributing__info a:hover {
+    color: #fcca5e;
+}
+
+footer {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.footer__credits p,
+.footer__info p {
+    font-size: 1.9rem;
+}
+
+.credits__list {
+    row-gap: 1.5rem;
+    justify-items: start;
+    list-style: none;
 }
