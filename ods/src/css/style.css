@@ -24,6 +24,7 @@
 body {
     margin: 0;
     font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header-menu {
@@ -51,7 +52,7 @@ body {
 .header-menu__nav-list {
     display: flex;
     list-style: none;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     gap: 2rem;
     padding: 0;
 }
@@ -98,7 +99,7 @@ body {
 
 .home__title {
     color: var(--secondary-color);
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 60px;
     filter: drop-shadow(1px 1px 0 var(--drop-shadow));
 }
@@ -181,12 +182,11 @@ body {
 .goals__title,
 .contributing__title,
 .more-info__title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
 }
 
 .about__description,
 .contributing__info {
-    font-size: 1.7rem;
     text-align: left;
 }
 
@@ -212,7 +212,7 @@ body {
     list-style-type: circle;
     color: var(--primary-color);
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding-left: 20px;
 }
 
@@ -268,6 +268,7 @@ body {
 
 .card__title {
     margin-top: 11rem;
+    font-size: 1.7rem;
 }
 
 .card-aware {
@@ -322,7 +323,7 @@ footer a {
 
 .footer__credits p,
 .footer__info p {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
 }
 
 .credits__list {
@@ -417,7 +418,7 @@ footer a {
     }
 
     .home__title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .goals__list:nth-of-type(2)::before,
@@ -429,5 +430,15 @@ footer a {
 
     #goals {
         gap: 0;
+    }
+
+    .header-menu__nav-list,
+    .goals__list {
+        font-size: 1.6rem;
+    }
+
+    .footer__credits p,
+    .footer__info p {
+        font-size: 1.7rem;
     }
 }
