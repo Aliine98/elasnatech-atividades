@@ -45,6 +45,10 @@ body {
     padding: 0;
 }
 
+.scrolled :is(.header-menu__logo, .nav-item__link) {
+    filter: none;
+}
+
 .header-menu__logo {
     width: 6rem;
 }
@@ -61,8 +65,15 @@ body {
     color: var(--secondary-color);
     text-decoration: none;
     cursor: pointer;
+    font-weight: 500;
     position: relative;
     transition: all .6s;
+}
+
+.header-menu__logo,
+.nav-item__link,
+.home__title {
+    filter: drop-shadow(1px 1px 0 var(--drop-shadow));
 }
 
 .nav-item__link::after {
@@ -101,7 +112,6 @@ body {
     color: var(--secondary-color);
     font-size: 4rem;
     margin-bottom: 60px;
-    filter: drop-shadow(1px 1px 0 var(--drop-shadow));
 }
 
 .home__title,
@@ -255,6 +265,7 @@ body {
     background-size: 12rem;
     border-radius: 25px;
     color: var(--primary-color);
+    height: 22.5rem;
     width: 15rem;
     padding: .8rem;
     display: flex;
@@ -300,8 +311,7 @@ body {
     color: var(--link);
 }
 
-.contributing__info a:hover,
-footer a:hover {
+:hover:is(.contributing__info a, footer a) {
     color: var(--link-hover);
 }
 
@@ -358,6 +368,12 @@ footer a {
         display: none;
     }
 
+    .header-menu__nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
     .about-container,
     #goals,
     .footer-container,
@@ -397,25 +413,23 @@ footer a {
     .goals__list:nth-of-type(2)::before,
     .goals__list:last-of-type::before {
         width: 350px;
+        height: 350px;
     }
 
     .goals__list:nth-of-type(2)::before {
-        content: url(../assets/medical-5459632.svg);
+        content: "";
+        background-image: url(../assets/medical-5459632.svg);
         float: left;
     }
 
     .goals__list:last-of-type::before {
-        content: url(../assets/medical-5459630.svg);
+        content: "";
+        background-image: url(../assets/medical-5459630.svg);
         float: right;
     }
 }
 
-@media screen and (max-width: 500px) {
-
-    .header-menu__nav-list {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+@media screen and (max-width: 650px) {
 
     .home__title {
         font-size: 3.5rem;
@@ -423,18 +437,28 @@ footer a {
 
     .goals__list:nth-of-type(2)::before,
     .goals__list:last-of-type::before {
-        width: 250px;
+        height: 250px;
         float: none;
+        display: block;
         clear: both;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     #goals {
         gap: 0;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
     .header-menu__nav-list,
     .goals__list {
         font-size: 1.6rem;
+    }
+
+    .card {
+        width: 19rem;
     }
 
     .footer__credits p,
