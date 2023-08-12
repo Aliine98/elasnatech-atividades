@@ -306,13 +306,12 @@ body {
     color: var(--secondary-color);
 }
 
-.contributing__info a {
+.contributing__info a,
+.nav-item__link:hover {
     color: var(--link);
 }
 
-:hover:is(.contributing__info a,
-    footer a,
-    .nav-item__link) {
+:hover:is(.contributing__info a, footer a) {
     color: var(--link-hover);
 }
 
