@@ -1,0 +1,58 @@
+.no-js .header {
+    flex-wrap: wrap;
+    position: static;
+}
+
+.no-js :is(.header__burger-menu, .header__dark-light-switch) {
+    display: none;
+}
+
+.no-js .header__nav {
+    translate: 0;
+    width: 100%;
+    position: static;
+}
+
+.no-js .header__nav-list {
+    display: flex;
+    gap: .6rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.no-js .home__socials {
+    top: 4vh;
+}
+
+.no-js .home__title--highlight::before {
+    content: "Desenvolvedora Web Frontend!";
+}
+
+.no-js .skills__list-item {
+    opacity: 1;
+    translate: 0;
+    transform: initial;
+}
+
+.no-js .swiper-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.no-js .projects__link {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: initial;
+}
+
+.no-js :is(.swiper-button-prev, .swiper-button-next, .swiper-pagination) {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .no-js .header__nav {
+        width: fit-content;
+    }
+}
