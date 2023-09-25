@@ -1,6 +1,9 @@
 :root {
     --bege: #d8d0a8;
     --branco: #fdfdfd;
+    --marrom: #800000;
+    --whats: #60c043;
+    --preto: #292424;
 }
 
 * {
@@ -10,26 +13,28 @@
 body {
     margin: 0;
     font-family: "Nunito", sans-serif;
+    color: var(--preto);
 }
 
-main > div {
+.hero {
     background-color: var(--bege);
     text-align: center;
     padding: 5em 0;
 }
 
-h1 {
+.hero__title {
     font-family: "Caveat", cursive;
     font-size: 3.5em;
 }
 
-.slogan {
+.hero__slogan {
     font-size: 1.5em;
     font-family: "Ubuntu", sans-serif;
     text-align: center;
 }
 
-main section {
+.menu,
+.contact {
     background-color: var(--branco);
     display: flex;
     flex-flow: row wrap;
@@ -38,34 +43,47 @@ main section {
     padding-bottom: 4em;
 }
 
-section h2 {
+.menu__title,
+.contact__title {
     text-align: center;
     width: 100%;
     margin-bottom: 1.5em;
 }
 
-section div {
+.menu__card {
     display: grid;
-    grid-template-rows: 200px 50px 190px 50px;
+    grid-template-rows: 200px 50px auto auto;
     background-color: var(--bege);
     width: 250px;
     text-align: center;
     border-radius: 10px;
+    row-gap: 1em;
 }
 
-div img {
+.card__img {
     border-radius: 10px 10px 0 0;
 }
 
-div p {
-    text-align: justify;
+.card__title {
+    place-self: center;
+}
+
+.card__title,
+.card__description {
+    margin: 0;
     padding: 0 1em;
 }
 
-p strong {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1.1em;
+.card__description {
+    text-align: left;
+}
+
+.card__price {
+    place-self: end;
+    padding-inline-end: 25px;
+    margin-top: 10px;
+    color: var(--marrom);
+    font-size: 1.2rem;
 }
 
 .contact {
@@ -74,13 +92,13 @@ p strong {
     text-align: center;
 }
 
-.contact i {
-    color: #60c043;
-    font-size: 2.3em;
-}
-
 .contact p {
     margin: .8em 0;
+}
+
+.ph-whatsapp-logo {
+    color: var(--whats);
+    font-size: 2.3em;
 }
 
 .whats {
@@ -98,11 +116,29 @@ footer {
     padding: 0 1em 1em;
 }
 
-footer a {
+.credits__list {
+    list-style: none;
+    display: grid;
+    gap: .8rem;
+    padding-left: 15px;
+}
+
+.social a {
     text-decoration: none;
 }
 
-footer i {
-    color: #292424;
+.ph-github-logo,
+.ph-linkedin-logo,
+.credits__list a {
+    color: var(--preto);
+    transition: color .5s
+}
+
+:hover:is(.ph-github-logo, .ph-linkedin-logo, .credits__list a) {
+    color: var(--marrom);
+}
+
+.ph-github-logo,
+.ph-linkedin-logo {
     font-size: 1.8em;
 }

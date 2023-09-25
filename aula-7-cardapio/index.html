@@ -19,52 +19,93 @@
 
     <body>
         <main>
-            <div>
-                <h1>Cantinho Mineiro</h1>
-                <p class="slogan">
+            <section class="hero">
+                <h1 class="hero__title">Cantinho Mineiro</h1>
+                <p class="hero__slogan">
                     <em>&ldquo; Sabor que encanta o paladar e aquece o coração! &rdquo;</em>
                 </p>
-            </div>
-            <section>
-                <h2>Cardápio</h2>
-                <div>
-                    <img src="https://anamariabraga.globo.com/wp-content/uploads/2020/02/pao-de-queijo-mineiro-de-familia.jpg"
-                        alt="Foto de uma cesta com vários pães de queijo" width="250" height="200">
-                    <h3>Pão de Queijo</h3>
-                    <p>Produzido com queijo da Serra do Canastra e queijo parmesão. Especiaria mineira ideal para todos
-                        os tipos de momentos,
-                        lanches, reuniões, festas.</p>
-                    <p><strong>R$ 20,00</strong></p>
-                </div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTm2G6NoNFu5SYlR6pC1Kow0t2K_GAifOEtL5ENS9TYJupBw_GmdERb8gcPEzJ616mdRPrloxFWcR7WchR9xVAWESW7gvnSew&usqp=CAY"
-                        alt="Foto de um prato com cinco broas doces" width="250" height="200">
-                    <h3>Broa Doce</h3>
-                    <p>A Broa Doce tem um sabor delicioso e clássico, com textura macia por dentro e por fora, combina
-                        com qualquer hora do dia.</p>
-                    <p><strong>R$ 18,00</strong></p>
-                </div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR_NTfyw-5u1tKnty783Vcu1awbjiLIYv1C_PwnZjQHH2uDa7BLy2_XfrfKFZDmiHc8dctlH3cFqi9HyuXAieWjOoBNTyqjsg&usqp=CAE"
-                        alt="Foto de um bolo de milho com uma fatia cortada" width="250" height="200">
-                    <h3>Bolo de Milho</h3>
-                    <p>Essa receita de bolo de milho com queijo é típica de festa junina, mas cai muito bem com um café.
+            </section>
+            <section class="menu">
+                <h2 class="menu__title">Cardápio</h2>
+                <div class="menu__card">
+                    <img src="./assets/pao-de-queijo.jpg" alt="Foto de uma cesta com vários pães de queijo"
+                        class="card__img" width="250" height="200">
+                    <h3 class="card__title">Pão de Queijo</h3>
+                    <p class="card__description">
+                        Produzido com queijo da Serra do Canastra e queijo parmesão. Especiaria mineira ideal para todos
+                        os tipos de momentos.
                     </p>
-                    <p><strong>R$ 80,00</strong></p>
+                    <p class="card__price"><strong>R$ 20,00</strong></p>
+                </div>
+                <div class="menu__card">
+                    <img src="./assets/broinha-de-fuba.jpg" alt="Foto de um prato com várias broinhas doces"
+                        class="card__img" width="250" height="200">
+                    <h3 class="card__title">Broa de Fubá com Erva-doce</h3>
+                    <p class="card__description">
+                        A broinha tem um sabor delicioso e clássico, com textura macia por dentro e por fora, combina
+                        com qualquer hora do dia.
+                    </p>
+                    <p class="card__price"><strong>R$ 18,00</strong></p>
+                </div>
+                <div class="menu__card">
+                    <img src="./assets/bolo-de-milho.webp" alt="Foto de um bolo de milho com uma fatia cortada"
+                        class="card__img" width="250" height="200">
+                    <h3 class="card__title">Bolo de Milho</h3>
+                    <p class="card__description">
+                        Bolo de milho molhadinho, macio e saboroso. Essa receita é típica de festa junina, mas cai muito
+                        bem com um café.
+                    </p>
+                    <p class="card__price"><strong>R$ 40,00</strong></p>
+                </div>
+                <div class="menu__card">
+                    <img src="./assets/bolo-de-cenoura-formigueiro.JPG"
+                        alt="Foto de um bolo de cenoura com calda de chocolate com uma fatia cortada" class="card__img"
+                        width="250" height="200">
+                    <h3 class="card__title">Bolo de Cenoura Formigueiro</h3>
+                    <p class="card__description">
+                        Bolo de cenoura fofinho com granulados de chocolate na massa e uma calda de chocolate
+                        maravilhosa.
+                    </p>
+                    <p class="card__price"><strong>R$ 50,00</strong></p>
                 </div>
             </section>
             <section class="contact">
-                <h2>Onde encontrar?</h2>
+                <h2 class="contact__title">Onde encontrar?</h2>
                 <p>Rua Fictícia, 1 - Bairro Centro - MG</p>
                 <p>ou</p>
                 <p class="whats"><i class="ph-fill ph-whatsapp-logo"></i> Whatsapp: (99) 99999-9999</p>
             </section>
         </main>
         <footer>
+            <h4>Créditos</h4>
+            <ul class="credits__list">
+                <li>
+                    <a href="https://phosphoricons.com/" target="_blank" rel="noopener noreferrer">Phosphor Icons</a>
+                </li>
+                <li>
+                    <a href="https://anamariabraga.globo.com/receita/pao-de-queijo-mineiro-de-familia/" target="_blank"
+                        rel="noopener noreferrer">Ana Maria Braga</a>
+                </li>
+                <li>
+                    <a href="https://www.nacozinhadahelo.com.br/receitas/receita-de-broinha-de-fuba" target="_blank"
+                        rel="noopener noreferrer">Na cozinha da Helo</a>
+                </li>
+                <li>
+                    <a href="https://territoriosgastronomicos.uai.com.br/2021/11/09/bolo-de-milho-do-mercado-central/"
+                        target="_blank" rel="noopener noreferrer">Territórios Gastronômicos</a>
+                </li>
+                <li>
+                    <a href="https://www.amandocozinhar.com/2021/11/bolo-de-cenoura-formigueiro.html" target="_blank"
+                        rel="noopener noreferrer">Amando Cozinhar</a>
+                </li>
+            </ul>
+
             <p>Desenvolvido com 💖 por Aline Bevilacqua! - 2023</p>
             <div class="social">
-                <a href="https://github.com/Aliine98" target="_blank" rel="noopener noreferrer" aria-label="Github link"><i class="ph-fill ph-github-logo"></i></a>
-                <a href="https://www.linkedin.com/in/aline-bevilacqua" target="_blank" rel="noopener noreferrer" aria-label="Linkedin link"><i class="ph-fill ph-linkedin-logo"></i></a>
+                <a href="https://github.com/aliine98" target="_blank" rel="noopener noreferrer"
+                    aria-label="Github link"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="https://www.linkedin.com/in/aline-bevilacqua" target="_blank" rel="noopener noreferrer"
+                    aria-label="Linkedin link"><i class="ph-fill ph-linkedin-logo"></i></a>
             </div>
         </footer>
     </body>
