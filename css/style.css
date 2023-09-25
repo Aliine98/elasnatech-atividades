@@ -1,23 +1,138 @@
+:root {
+    --tooltip-background: hsla(0, 0%, 11%, 0.8);
+    --dark-color: #1d1d1d;
+    --light-color: #fdfdfd;
+    --primary: #0012b4;
+    --hover-primary: #b8044f;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #d5e0ff;
+    background-color: #e5ecff;
     font-family: 'Space mono', monospaced;
     margin: 0 auto;
     max-width: 1000px;
-    padding: 25px;
+    color: var(--dark-color);
+    padding: 20px;
 }
 
-h2 + div {
-    margin-left: 20px;
+i {
+    margin-top: 3px;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+}
+
+a {
+    overflow-wrap: anywhere;
+    transition: all .3s;
+}
+
+a:hover {
+    color: var(--hover-primary);
+    scale: 1.1;
 }
 
 h3 {
-    margin-top: 2px;
+    margin: 0;
 }
 
-h3 span {
-    color: #0012b4;
+section {
+    margin-top: 3rem;
+}
+
+.contact,
+.location {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dashed var(--dark-color);
+    cursor: pointer;
+    width: 90%;
+    overflow-wrap: break-word;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--tooltip-background);
+    color: var(--light-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    translate: -25%;
+    margin-left: -4rem;
+    transition: opacity .6s;
+}
+
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--tooltip-background) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-list__item {
+    width: 400px;
+}
+
+.experiences,
+.projects-list,
+.courses {
+    list-style: none;
+    padding-left: 20px;
+    display: grid;
+    row-gap: 40px;
+}
+
+.projects__list-item ul li {
+    margin-bottom: 10px;
+}
+
+.experiences__list-item {
+    margin: 10px 0;
+}
+
+.projects__list-item ul,
+.experiences ul {
+    list-style-type: disc;
+}
+
+.experiences__title,
+a {
+    color: var(--primary);
+}
+
+@media screen and (min-width: 410px) {
+    .tooltip {
+        width: fit-content;
+    }
 }
