@@ -19,7 +19,8 @@ body {
     max-width: 300px;
 }
 
-#about {
+#about,
+#contact {
     background-color: #111111;
     color: #fdfdfd;
 }
