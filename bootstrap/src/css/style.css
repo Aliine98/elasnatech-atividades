@@ -1,0 +1,26 @@
+.header,
+body {
+    background-color: #fdfdfd;
+}
+
+#home {
+    background-color: #f0f0fb;
+}
+
+.home__title,
+.highlights__title,
+.clients__title--highlight {
+    color: #202a65;
+}
+
+.home__img,
+.about__img,
+.clients__img {
+    max-width: 300px;
+}
+
+#about,
+#contact {
+    background-color: #111111;
+    color: #fdfdfd;
+}
