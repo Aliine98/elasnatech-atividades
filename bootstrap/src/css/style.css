@@ -1,3 +1,16 @@
-.header {
+.header,
+body {
     background-color: #fdfdfd;
+}
+
+#home {
+    background-color: #f0f0fb;
+}
+
+.home__title {
+    color: #202a65;
+}
+
+.home__img {
+    max-width: 300px;
 }
