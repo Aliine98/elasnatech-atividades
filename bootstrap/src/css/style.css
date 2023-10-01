@@ -12,6 +12,12 @@ body {
     color: #202a65;
 }
 
-.home__img {
+.home__img,
+.about__img {
     max-width: 300px;
+}
+
+#about {
+    background-color: #111111;
+    color: #fdfdfd;
 }
