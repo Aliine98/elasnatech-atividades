@@ -8,12 +8,14 @@ body {
 }
 
 .home__title,
-.highlights__title {
+.highlights__title,
+.clients__title--highlight {
     color: #202a65;
 }
 
 .home__img,
-.about__img {
+.about__img,
+.clients__img {
     max-width: 300px;
 }
 
