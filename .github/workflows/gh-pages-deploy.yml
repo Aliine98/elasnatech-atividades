@@ -21,6 +21,7 @@ jobs:
                   cp -f -R ./aula-7-cardapio ./build
                   cp -f -R ./portfolio ./build
                   cp -f -R ./ods ./build
+                  cp -f -R ./bootstrap ./build
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@v4
