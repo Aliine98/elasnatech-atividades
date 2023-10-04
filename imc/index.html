@@ -16,21 +16,21 @@
 
     <body>
         <main class="container d-flex align-items-center justify-content-center">
-            <form class="card px-4 pt-5 pb-4" data-bs-theme="dark">
-                <div class="card-header">
-                    <h1 class="card-title">Calculadora de IMC</h1>
-                </div>
+            <form class="card px-4 pt-5 pb-3" data-bs-theme="dark">
+                <h1 class="card-title border-bottom px-3 pb-2">Calculadora de IMC</h1>
                 <div class="card-body">
                     <div class="mb-3">
                         <label for="weight" class="form-label">Digite seu peso em quilos:</label>
                         <input type="number" min="0" class="form-control" placeholder="Ex: 70" id="weight" required />
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label for="height" class="form-label">Digite sua altura em metros:</label>
                         <input type="number" min="0" step="0.01" class="form-control" placeholder="Ex: 1.80" id="height" required />
                     </div>
-                    <button type="button" py-click="calc_imc()" class="btn btn-primary">Calcular</button>
-                    <output id="imc" class="form-control-plaintext text-center h1 mt-3"></output>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" py-click="calc_imc()" class="btn btn-primary px-3">Calcular</button>
+                    </div>
+                    <output id="imc" class="form-control-plaintext text-center h1 mt-1"></output>
                     <output id="imc-description" class="form-control-plaintext text-center h3"></output>
                 </div>
             </form>
@@ -41,7 +41,7 @@
                 <a href="https://ui.glass/generator/" target="_blank" rel="noopener" class="link-info link-offset-3-hover link-underline-opacity-0 link-underline-opacity-100-hover">Glassmorphism CSS Generator</a>
                 <a href="https://bgjar.com/" target="_blank" rel="noopener" class="link-info link-offset-3-hover link-underline-opacity-0 link-underline-opacity-100-hover">Bg Jar - SVG Backgrounds</a>
             </div>
-            <p>Desenvolvido com ❤ por Aline Bevilacqua &copy; 2023</p>
+            <p class="mt-2">Desenvolvido com ❤ por Aline Bevilacqua &copy; 2023</p>
             <div class="nav">
                 <a href="http://github.com/aliine98" target="_blank" rel="noopener" aria-label="GitHub link" class="nav-link link-light link-opacity-75-hover"><i class="bi bi-github h2"></i></a>
                 <a href="https://www.linkedin.com/in/aline-bevilacqua/" target="_blank" rel="noopener" aria-label="LinkedIn link" class="nav-link link-light link-opacity-75-hover"><i class="bi bi-linkedin h2"></i></a>
