@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de IMC - Python &amp; PyScript</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- bootstrap icons link-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!-- pyscript -->
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        <noscript>
+            <dialog class="alert text-bg-danger" open><i class="bi bi-exclamation-triangle-fill"></i> Falha ao carregar o JavaScript. Por favor, ative o JavaScript em seu navegador.</dialog>
+        </noscript>
+    </head>
+
+    <body>
+        <main class="container d-flex align-items-center justify-content-center">
+            <form class="card px-4 pt-5 pb-3" data-bs-theme="dark">
+                <h1 class="card-title border-bottom px-3 pb-2">Calculadora de IMC</h1>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="weight" class="form-label">Digite seu peso em quilos:</label>
+                        <input type="number" min="0" class="form-control" placeholder="Ex: 70" id="weight" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="height" class="form-label">Digite sua altura em metros:</label>
+                        <input type="number" min="0" step="0.01" class="form-control" placeholder="Ex: 1.80" id="height" required />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" py-click="calc_imc()" class="btn btn-primary px-3" disabled>Calcular</button>
+                    </div>
+                    <output id="imc" class="form-control-plaintext text-center h1 mt-1"></output>
+                    <output id="imc-description" class="form-control-plaintext text-center h3"></output>
+                </div>
+            </form>
+        </main>
+        <footer class="py-5 text-bg-dark d-flex flex-column align-items-center gap-3" data-bs-theme="dark">
+            <h2 class="h4 text-center">Créditos</h2>
+            <div class="nav justify-content-center row-gap-3 column-gap-4">
+                <a href="https://ui.glass/generator/" target="_blank" rel="noopener" class="link-info link-offset-3-hover link-underline-opacity-0 link-underline-opacity-100-hover">Glassmorphism CSS Generator</a>
+                <a href="https://bgjar.com/" target="_blank" rel="noopener" class="link-info link-offset-3-hover link-underline-opacity-0 link-underline-opacity-100-hover">Bg Jar - SVG Backgrounds</a>
+            </div>
+            <p class="mt-2">Desenvolvido com ❤ por Aline Bevilacqua &copy; 2023</p>
+            <div class="nav">
+                <a href="http://github.com/aliine98" target="_blank" rel="noopener" aria-label="GitHub link" class="nav-link link-light link-opacity-75-hover"><i class="bi bi-github h2"></i></a>
+                <a href="https://www.linkedin.com/in/aline-bevilacqua/" target="_blank" rel="noopener" aria-label="LinkedIn link" class="nav-link link-light link-opacity-75-hover"><i class="bi bi-linkedin h2"></i></a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="./enable-button.js"></script>
+        <py-script src="./python/main.py"></py-script>
+    </body>
+
+</html>
