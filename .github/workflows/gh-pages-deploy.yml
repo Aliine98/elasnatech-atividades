@@ -22,6 +22,7 @@ jobs:
                   cp -f -R ./portfolio ./build
                   cp -f -R ./ods ./build
                   cp -f -R ./bootstrap ./build
+                  cp -f -R ./imc ./build
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@v4
